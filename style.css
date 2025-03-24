@@ -1,97 +1,106 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #07142A;
-    color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-size: 16px; /* Base font size remains constant */
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-color: #07142a;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1rem; /* Base font size remains constant */
+}
+
+#app {
+  text-align: center;
+  /* width: 70%; */
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 200%;
+  max-width: 396px;
+  height: auto;
+}
+
+h1 {
+  font-size: 32px; /* Constant heading size */
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#instruction {
+  font-size: 16px; /* Constant instruction size */
+  color: #b0b0b0;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 20px;
+}
+
+.word {
+  font-size: 20px; /* Constant word size */
+  overflow-wrap: break-word;
+  flex: 1 1 40%;
+  text-align: left;
+  margin-right: 16px;
+}
+
+input[type="text"] {
+  flex: 1 1 40%;
+  min-width: 150px;
+  max-width: 200px;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder {
+  color: #b0b0b0;
+}
+
+#actionButton {
+  background-color: lightgreen;
+  border: none;
+  color: #07142a;
+  font-size: 20px; /* Constant button text size */
+  font-weight: bold;
+  padding: 16px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+@media (max-width: 480px) {
   #app {
-    text-align: center;
-    width: 70%;
-    max-width: 800px;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 0px 20px;
   }
-  
-  #logo {
-    width: 200%;
-    max-width: 396px;
-    height: auto;
-  }
-  
-  h1 {
-    font-size: 32px; /* Constant heading size */
-    font-weight: bold;
+  /* .row {
+    margin: 4px 10px;
+  } */
+  #actionButton {
+    padding: 12px 24px;
     margin: 20px 0;
   }
-  
   #instruction {
-    font-size: 16px; /* Constant instruction size */
-    color: #B0B0B0;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: 8px 20px;
-  }
-  
-  .word {
-    font-size: 20px; /* Constant word size */
-    overflow-wrap: break-word;
-    flex: 1 1 40%;
-    text-align: left;
-    margin-right: 16px;
-  }
-  
-  input[type="text"] {
-    flex: 1 1 40%;
-    min-width: 150px;
-    max-width: 200px;
-    padding: 8px;
-    border: 1px solid white;
-    border-radius: 4px;
-    background-color: transparent;
-    color: white;
-    box-sizing: border-box;
-  }
-  
-  input[type="text"]::placeholder {
-    color: #B0B0B0;
-  }
-  
+
   #actionButton {
-    background-color: lightgreen;
-    border: none;
-    color: #07142A;
-    font-size: 20px; /* Constant button text size */
-    font-weight: bold;
-    padding: 16px 32px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 30px 0;
+    width: 100%;
   }
-  
-  /* Media queries to adjust spacing only */
-  @media (max-width: 480px) {
-    #app {
-      padding: 10px;
-    }
-    .row {
-      margin: 4px 10px;
-    }
-    #actionButton {
-      padding: 12px 24px;
-      margin: 20px 0;
-    }
+
+  #logo {
+    width: 350px;
   }
-  
+}
