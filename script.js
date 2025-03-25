@@ -15,7 +15,7 @@ const actionButton = document.getElementById("actionButton");
 function generateWords() {
   generatedWords = [];
   controllers = {};
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 3; i++) {
     const randomIndex = Math.floor(Math.random() * allWords.length);
     generatedWords.push(allWords[randomIndex]);
   }
