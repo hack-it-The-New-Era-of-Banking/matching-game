@@ -1,12 +1,9 @@
-const allWords = [
-  "Blockchain",
-  "Cryptocurrency",
-  "Bitcoin",
-];
+const allWords = ["Blockchain", "Cryptocurrency", "Bitcoin"];
 
 let generatedWords = [];
 let controllers = {}; // Map each word to its input element
 let submitted = false;
+// Map each word to its input element
 
 const wordListDiv = document.getElementById("wordList");
 const instructionP = document.getElementById("instruction");
@@ -15,10 +12,16 @@ const actionButton = document.getElementById("actionButton");
 function generateWords() {
   generatedWords = [];
   controllers = {};
-  for (let i = 0; i < 3; i++) {
+  const usedIndices = new Set(); // Track used indices to avoid duplicates
+
+  while (generatedWords.length < 3) {
     const randomIndex = Math.floor(Math.random() * allWords.length);
-    generatedWords.push(allWords[randomIndex]);
+    if (!usedIndices.has(randomIndex)) {
+      usedIndices.add(randomIndex);
+      generatedWords.push(allWords[randomIndex]);
+    }
   }
+
   submitted = false;
   renderMainView();
 }
