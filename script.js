@@ -1,4 +1,28 @@
-const allWords = ["Blockchain", "Cryptocurrency", "Bitcoin"];
+const allWords = [
+  "Blockchain",
+  "Cryptocurrency",
+  "Bitcoin",
+  "Mobile Banking",
+  "Contactless Payment",
+  "Neobank",
+  "Investment",
+  "Stock Market",
+  "Credit Score",
+  "Interest Rate",
+  "Peer-to-Peer Lending",
+  "Artificial Intelligence",
+  "Machine Learning",
+  "Chatbot",
+  "Algorithm",
+  "Big Data",
+  "Predictive Analytics",
+  "Cybersecurity",
+  "Two-Factor Authentication",
+  "Open Banking",
+  "Robo-Advisor",
+  "Fraud Detection",
+  "Smart Contract",
+];
 
 let generatedWords = [];
 let controllers = {}; // Map each word to its input element
