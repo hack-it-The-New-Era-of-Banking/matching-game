@@ -38,7 +38,7 @@ function generateWords() {
   controllers = {};
   const usedIndices = new Set(); // Track used indices to avoid duplicates
 
-  while (generatedWords.length < 3) {
+  while (generatedWords.length < 5) {
     const randomIndex = Math.floor(Math.random() * allWords.length);
     if (!usedIndices.has(randomIndex)) {
       usedIndices.add(randomIndex);
